@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #f2e9b9;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    width: 75%;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna-derecha {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px) auto;
+    gap: 10px;
+}
+
+.imagen-principal {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-contacto {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    text-align: left;
+}
+
+.titulo-contacto h2 {
+    color: #0c0a01;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.rombo {
+    color: #f2e9b9;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.cuadricula {
+    padding: 10px;
+    border: 0.2px solid #f2e9b9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.cuadricula h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 0;
+}
+
+.lista-horario {
+    list-style: none;
+    margin-top: auto;
+}
+
+.lista-horario li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.dia {
+    flex: 1;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.linea-punteada {
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px dotted #f2e9b9;
+    margin: 0 10px;
+}
+
+.horario {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imagen-comida {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-comida img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.mapa-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.mapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.boton-mapa {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0f0101;
+    color: #f2e9b9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.flecha {
+    margin-left: 5px;
+}
+
+.lista-contacto {
+    list-style: none;
+    margin-top: auto;
+}
+
+.lista-contacto li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dato-contacto {
+    flex: 1;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.valor-contacto {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.red-social {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #f2e9b9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    grid-column: span 2;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 0.1px solid #f2e9b9;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 12px;
+}
